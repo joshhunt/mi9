@@ -1,4 +1,7 @@
-mi9
-===
+# Mi9 Coding Challange
 
-Requires node.js. Run with `forman start` or `node app.js`
+Built with node.js, [running on Heroku](http://blooming-lake-3061.herokuapp.com).
+
+Install dependancies with `npm install`, then start server with `npm start`.
+
+There are also a few unit tests. Run them with `npm test`.

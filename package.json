@@ -4,7 +4,8 @@
   "description": "mi9 ===",
   "main": "app.js",
   "scripts": {
-    "test": "echo \"No tests to fail, so everything's good!\" && exit 0"
+    "test": "./node_modules/mocha/bin/mocha -R list test.js",
+    "start": "node app.js"
   },
   "repository": {
     "type": "git",
@@ -25,6 +26,7 @@
     "should": "~4.0.4",
     "mocha": "~1.20.1",
     "supertest": "~0.13.0",
-    "sinon": "~1.10.2"
+    "sinon": "~1.10.2",
+    "colors": "~0.6.2"
   }
 }
