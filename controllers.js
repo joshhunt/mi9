@@ -8,6 +8,7 @@ module.exports.showIndex = function(req, res) {
 module.exports.filterShows = function(req, res) {
     if (!req.body || !req.body.payload) {
         utils.error(res, 'Could not decode request: Key \'payload\' missing in JSON body', 400);
+        return;
     }
 
     var validShows = _.chain(req.body.payload)
