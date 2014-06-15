@@ -6,14 +6,6 @@ var controllers = require('./controllers'),
 
 var app = express();
 
-app.use(function (req, res, next){
-    console.log(req.method, req.originalUrl);
-    req.on('data', function (chunk) {
-        console.log('BODY: ' + chunk);
-    });
-    next();
-});
-
 app.use(bodyParser.json());
 app.use(utils.catchJsonErrors);
 
